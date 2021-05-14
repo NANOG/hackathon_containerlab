@@ -1,0 +1,20 @@
+name: foo
+
+mgmt:
+  network: custom_mgmt_foo
+  ipv4_subnet: 172.16.0.0/24
+  ipv6_subnet: 2001:172:16::/64
+
+topology:
+  nodes:
+    ceos1:
+      kind: ceos
+      image: ceos:latest
+      mgmt_ipv4: 172.16.0.2
+      mgmt_ipv6: 2001:172:16::2
+    srl1:
+      kind: srl
+      image: srlinux:21.3.1-410
+      license: license.key
+      mgmt_ipv4: 172.16.0.3
+      mgmt_ipv6: 2001:172:16::3
