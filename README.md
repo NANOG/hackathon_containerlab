@@ -15,7 +15,7 @@ sudo docker import --change 'VOLUME /mnt/flash/' cEOS-lab-4.25.1F.tar ceos:4.25.
 ```
 
 ## Register an Nokia SRL Docker image
-*Nokia image not provided - contact your friendly Nokia rep*
+*Nokia image and license not provided - contact your friendly Nokia rep*
 ```bash
 sudo docker image load -i 21.3.1-410.tar.xz
 ```
